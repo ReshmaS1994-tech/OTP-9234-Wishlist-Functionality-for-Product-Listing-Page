@@ -1,0 +1,133 @@
+/*
+	Sass Application Entry Point
+	Link all your sass dependencies in the right order
+
+	Example:
+	@import "other-sass-file.scss";
+	@import "../../<other module>/Sass/other-sass-file.scss";
+// */ 
+// .product-details-add-to-product-list {
+//   background-color: #ff4081; // custom wishlist button color
+//   border-radius: 8px;
+//   font-weight: bold;
+//   padding: 6px 12px;
+ 
+//   &:hover {
+//     background-color: #e91e63;
+//   }
+// }
+
+// Custom Wishlist Styles
+ 
+// .wishlist-button {
+//   margin-top: 8px;
+ 
+//   .product-details-add-to-product-list {
+//     background-color: #ff4081;
+//     color: #fff;
+//     border: none;
+//     border-radius: 6px;
+//     padding: 6px 12px;
+//     cursor: pointer;
+//     font-weight: 600;
+ 
+//     &:hover {
+//       background-color: #e91e63;
+//     }
+//   }
+// }
+ .wishlistLink{
+    color: rgb(104, 104, 118);
+    text-decoration: none;
+}
+ 
+.product-list-control-button-wishlist{
+    text-decoration: none;
+}
+
+/*
+  Sass Application Entry Point
+  Link all your sass dependencies in the right order
+ 
+  Example:
+  @import "other-sass-file.scss";
+  @import "../../<other module>/Sass/other-sass-file.scss";
+*/
+ 
+.wishlistcreation-info-card {
+    @extend .info-card;
+}
+ 
+.wishlistcreation-info-card-content {
+    @extend .info-card-content;
+    color: $sc-color-secondary;
+    font-weight: bold;
+}
+ 
+ 
+/* Tooltip container */
+.wishlist-tooltip {
+    position: relative;
+    cursor: pointer;
+}
+ 
+/* Tooltip text */
+.wishlist-tooltip::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 4px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 1000;
+}
+ 
+/* Show tooltip on hover */
+.wishlist-tooltip:hover::after {
+    opacity: 1;
+}
+
+
+
+ 
+.wishlist-active {
+  color: red;
+}
+ 
+[data-tooltip] {
+  position: relative;
+  cursor: pointer;
+}
+ 
+[data-tooltip]::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #2970AD;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 4px;
+  white-space: nowrap;
+  font-size: 12px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 1000;
+}
+ 
+[data-tooltip]:hover::after {
+  opacity: 1;
+}
+
+
+
+ 

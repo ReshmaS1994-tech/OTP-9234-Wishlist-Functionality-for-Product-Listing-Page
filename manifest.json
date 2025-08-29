@@ -1,0 +1,107 @@
+{
+    "name": "wishlistExtension",
+    "fantasyName": "wishlistExtension",
+    "vendor": "JJ",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": "",
+        "SCS": ""
+    },
+    "description": "extension for adding wishlist in PLP Page",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/wishlistModule.Service.ss"
+            ]
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/wishlistModule/Configuration/wishlistModule.json"
+        ]
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/wishlistModule/Sass/_wishlistextension-wishlistmodule.scss",
+            "myaccount": "Modules/wishlistModule/Sass/_wishlistextension-wishlistmodule.scss",
+            "checkout": "Modules/wishlistModule/Sass/_wishlistextension-wishlistmodule.scss"
+        },
+        "files": [
+            "Modules/wishlistModule/Sass/_wishlistextension-wishlistmodule.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/wishlistModule/Templates/jj_wishlistextension_wishlistmodule.tpl"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/wishlistModule/Templates/jj_wishlistextension_wishlistmodule.tpl"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/wishlistModule/Templates/jj_wishlistextension_wishlistmodule.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/wishlistModule/JavaScript/JJ.wishlistExtension.wishlistModule.js",
+            "myaccount": "Modules/wishlistModule/JavaScript/JJ.wishlistExtension.wishlistModule.js",
+            "checkout": "Modules/wishlistModule/JavaScript/JJ.wishlistExtension.wishlistModule.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/wishlistModule/JavaScript/JJ.wishlistExtension.wishlistModule.js",
+                    "Modules/wishlistModule/JavaScript/wishlistModule.View.js",
+                    "Modules/wishlistModule/JavaScript/JJ.wishlistExtension.wishlistModule.Model.js",
+                    "Modules/wishlistModule/JavaScript/JJ.wishlistExtension.wishlistModule.SS2Model.js"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/wishlistModule/JavaScript/JJ.wishlistExtension.wishlistModule.js",
+                    "Modules/wishlistModule/JavaScript/wishlistModule.View.js",
+                    "Modules/wishlistModule/JavaScript/JJ.wishlistExtension.wishlistModule.Model.js",
+                    "Modules/wishlistModule/JavaScript/JJ.wishlistExtension.wishlistModule.SS2Model.js"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/wishlistModule/JavaScript/JJ.wishlistExtension.wishlistModule.js",
+                    "Modules/wishlistModule/JavaScript/wishlistModule.View.js",
+                    "Modules/wishlistModule/JavaScript/JJ.wishlistExtension.wishlistModule.Model.js",
+                    "Modules/wishlistModule/JavaScript/JJ.wishlistExtension.wishlistModule.SS2Model.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/wishlistModule/SuiteScript/JJ.wishlistExtension.wishlistModule.js",
+        "files": [
+            "Modules/wishlistModule/SuiteScript/JJ.wishlistExtension.wishlistModule.js",
+            "Modules/wishlistModule/SuiteScript/wishlistModule.ServiceController.js"
+        ]
+    },
+    "local_folder": "Workspace\\wishlistExtension",
+    "suitescript2": {
+        "files": [
+            "Modules/wishlistModule/SuiteScript2/wishlistModule.Service.ss"
+        ]
+    }
+}
